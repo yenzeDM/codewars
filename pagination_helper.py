@@ -55,6 +55,9 @@ class PaginationHelper:
 a = PaginationHelper([i for i in range(24)], 6)
 print(a.page_index(7))
 
+
+#del
+
 # Instructions
 
 # For this exercise you will be strengthening your page-fu mastery.

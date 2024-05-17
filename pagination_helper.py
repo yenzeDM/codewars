@@ -48,13 +48,12 @@ class PaginationHelper:
         search_item = self.collection[item_index]
         tmp = self.list_of_page()
         for page in tmp:
-            for item in page:
-                if search_item == item:
-                    return tmp.index(page)
+            if search_item in page:
+                return tmp.index(page)
 
 
-a = PaginationHelper([i for i in range(31)], 21)
-print(a.page_index(25))
+a = PaginationHelper([i for i in range(24)], 6)
+print(a.page_index(7))
 
 # Instructions
 
